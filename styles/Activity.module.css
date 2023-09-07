@@ -3,6 +3,10 @@
   align-items: center;
 }
 
+.image {
+  width: 178px;
+}
+
 .activityInfo {
   padding: 2em;
   display: flex;

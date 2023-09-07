@@ -31,7 +31,7 @@ function Activity(props) {
     <table className={styles.activityTable}>
       <tbody>
         <tr>
-          <td>
+          <td className={styles.image}>
             <Image
               src="https://res.cloudinary.com/djfrwyodt/image/upload/v1694082777/image_291_nd4unk.png"
               alt="Activity photo"
@@ -50,7 +50,7 @@ function Activity(props) {
                   </td>
                   <td className={styles.valueColumn}>
                     <h3>{truncateText(props.name, 30)}</h3>
-                    <h3>{truncateText(props.description, 250)}</h3>
+                    <h3>{truncateText(props.description, 150)}</h3>
                     <h3>{truncateText(props.price, 10)} €</h3>
                   </td>
                 </tr>
