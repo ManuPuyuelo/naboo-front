@@ -57,4 +57,16 @@
   .labelColumn {
     display: none;
   }
+
+  .deleteButton {
+    height: 40px;
+    width: 100px;
+    padding: 1em;
+    background-color: white;
+    border: 1px solid #ff2626;
+    border-radius: 2em;
+    color: #ff2626;
+    font-family: "Roboto";
+    cursor: pointer;
+  }
 }
