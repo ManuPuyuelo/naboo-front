@@ -31,7 +31,7 @@ function MyActivities() {
   const [formErrors, setFormErrors] = useState({});
 
   useEffect(() => {
-    fetch(`https://naboo-back-express.vercel.app/activities`)
+    fetch(`https://naboo-back-nest-js.vercel.app/activities`)
       .then((response) => response.json())
       .then((data) => {
         if (data.result) {
@@ -63,7 +63,7 @@ function MyActivities() {
     const errors = validateForm();
     if (Object.keys(errors).length === 0) {
       // Les champs sont valides, continuez avec la création
-      fetch("https://naboo-back-express.vercel.app/activities", {
+      fetch("https://naboo-back-nest-js.vercel.app/activities", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

@@ -16,7 +16,7 @@ function Activity(props) {
   };
 
   const handleDelete = () => {
-    fetch("https://naboo-back-express.vercel.app/activities", {
+    fetch("https://naboo-back-nest-js.vercel.app/activities", {
       method: "DELETE",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ activityId: props._id }),
