@@ -1,0 +1,36 @@
+.activity {
+  display: flex;
+  align-items: center;
+}
+
+.activityInfo {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 60vw;
+}
+.labelColumn {
+  font-size: 14px;
+  width: 100px;
+}
+
+.valueColumn {
+  font-size: 14px;
+}
+.valueColumn h3,
+.labelColumn p {
+  height: 40px;
+}
+
+.deleteButton {
+  height: 47px;
+  width: 128px;
+  padding: 1em;
+  background-color: white;
+  border: 1px solid #ff2626;
+  border-radius: 2em;
+  color: #ff2626;
+  font-family: "Roboto";
+  cursor: pointer;
+}

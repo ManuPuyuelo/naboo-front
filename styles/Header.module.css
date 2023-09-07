@@ -1,0 +1,136 @@
+.headercontainer {
+  height: 10vh;
+  width: 100%;
+  padding-left: 8vw;
+  padding-right: 8vw;
+  background-color: #0cbc8b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 1029;
+}
+
+.HeaderRightMenu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hamburger {
+  border: 0;
+  background-color: #0cbc8b;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  padding: 0;
+  display: none;
+}
+
+.hamburgerExpanded {
+  transform: rotate(0.25turn);
+}
+
+.hamburgerIcon {
+  color: rgb(255, 255, 255);
+  width: 1rem;
+  height: 1rem;
+}
+
+@media screen and (max-width: 950px) {
+  .hamburger {
+    display: block;
+  }
+}
+
+.brandName {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 1.5em;
+  line-height: 1em;
+  font-family: "Roboto";
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navigationMenu {
+  display: flex;
+  align-items: center;
+}
+
+.navigationMenu ul {
+  display: flex;
+  padding: 0;
+  gap: 3rem;
+  list-style: none;
+}
+
+.navigationMenu li {
+  display: flex;
+  align-items: center;
+  height: 2em;
+}
+
+.navigationMenuActive {
+  border-bottom: 2px solid white;
+}
+
+.navigationMenu li:hover {
+  border-bottom: 2px solid white;
+}
+
+.navigationMenu li.userImage:hover {
+  border-bottom: none;
+}
+
+.navigationMenu li a {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+
+.navigationMenu a {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 950px) {
+  .navigationMenu ul {
+    margin: 0;
+    padding: 0;
+    padding-top: 2vh;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    background-color: white;
+    border-top: 1px solid rgb(230, 230, 230);
+    display: none;
+    z-index: 9999;
+  }
+  .navigationMenu li {
+    text-align: center;
+    margin: 0;
+  }
+
+  .navigationMenu li a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    color: black;
+  }
+
+  .navigationMenuActive {
+    border-bottom: none;
+  }
+
+  .navigationMenu li:hover {
+    border-bottom: none;
+  }
+
+  .navigationMenuExpanded ul {
+    display: block;
+  }
+}

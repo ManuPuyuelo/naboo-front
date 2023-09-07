@@ -1,0 +1,221 @@
+.main {
+  width: 100vw;
+  max-width: 100%;
+
+  background-color: #ffffff;
+}
+
+.firstSection {
+  padding-top: 10vh;
+  padding-bottom: 4vw;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.sectionContainer {
+  margin-top: 2vw;
+  margin-left: 8vw;
+  margin-right: 8vw;
+  background-color: white;
+}
+.titlesContainer {
+  padding-top: 2vw;
+}
+
+.emptyState {
+  padding: 4vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3em;
+}
+.emptyState p {
+  text-align: center;
+  color: #1b1b1d;
+}
+.emptyState button {
+  margin: 0 auto;
+}
+
+.doNotDisplay {
+  display: none;
+}
+
+.createButton {
+  height: 47px;
+  width: 200px;
+  padding: 1em;
+  background-color: #0cbc8b;
+  color: white;
+  font-family: "Roboto";
+  cursor: pointer;
+}
+
+.icon {
+  color: rgb(255, 255, 255);
+  margin-right: 6px;
+  width: 1em;
+  height: 1em;
+}
+
+.activitiesContainer {
+  margin-top: 4vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Styles pour la modal */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(30, 30, 30, 0.8); /* Fond sombre semi-transparent */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modalContent {
+  margin: 0 auto;
+  background-color: white;
+  position: relative;
+  z-index: 10000;
+  overflow-y: auto;
+}
+
+.firstContent {
+  padding-left: 4em;
+  padding-right: 4em;
+  padding-top: 4em;
+  padding-bottom: 1em;
+}
+.topModal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.closeButton {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+/* Styles pour les titres, champs et boutons dans la modal */
+.modalContent h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.modalInputs {
+  margin-bottom: 20px;
+}
+
+.inputContainer label {
+  font-size: 16px;
+}
+/* Styles pour les champs input */
+.inputContainer input,
+.inputContainer textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-family: "Roboto";
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.inputContainer textarea {
+  height: 100px;
+}
+.errorText {
+  color: red;
+  font-size: 12px;
+  margin-top: -15px;
+  margin-bottom: 20px;
+}
+.secondContent {
+  padding-bottom: 20px;
+}
+/* Styles pour le séparateur gris */
+.modalSeparator {
+  border-top: 1px solid #ccc;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+/* Styles pour les boutons Annuler et Enregistrer */
+.modalButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalButton {
+  padding: 10px 20px;
+  height: 47px;
+  width: 200px;
+  margin: 0 10px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.cancelButton {
+  background-color: #ccc;
+  color: white;
+}
+
+.saveButton {
+  background-color: #0cbc8b;
+  color: white;
+}
+
+/* @media screen and (max-width: 1665px) {
+  .sectionContainer {
+    margin-top: 2vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    background-color: white;
+    border-radius: 1em;
+  }
+}
+@media screen and (max-width: 1489px) {
+  .sectionContainer {
+    margin-left: 8vw;
+    margin-right: 8vw;
+  }
+}
+
+@media screen and (max-width: 805px) {
+  .activitiesContainer {
+    margin-top: 4vw;
+  }
+
+  .sectionContainer {
+    margin-top: 4vw;
+    padding-top: 8vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+  .sectionContainer {
+    padding-bottom: 8vw;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .sectionContainer {
+    margin-left: 4vw;
+    margin-right: 4vw;
+  }
+} */
