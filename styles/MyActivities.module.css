@@ -1,7 +1,6 @@
 .main {
   width: 100vw;
   max-width: 100%;
-
   background-color: #ffffff;
 }
 
@@ -181,6 +180,10 @@
   color: white;
 }
 @media screen and (max-width: 800px) {
+  .sectionContainer {
+    margin-left: 4vw;
+    margin-right: 4vw;
+  }
   .createButton {
     margin: 0 auto;
   }
