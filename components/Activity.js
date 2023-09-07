@@ -8,12 +8,6 @@ import { useDispatch, useSelector } from "react-redux";
 
 function Activity(props) {
   const dispatch = useDispatch();
-  const truncateText = (text, maxLength) => {
-    if (text.length > maxLength) {
-      return text.substring(0, maxLength) + " ...";
-    }
-    return text;
-  };
 
   const handleDelete = () => {
     fetch("https://naboo-back-nest-js.vercel.app/activities", {
@@ -49,9 +43,9 @@ function Activity(props) {
                     <p>Prix :</p>
                   </td>
                   <td className={styles.valueColumn}>
-                    <h3>{truncateText(props.name, 30)}</h3>
-                    <h3>{truncateText(props.description, 150)}</h3>
-                    <h3>{truncateText(props.price, 10)} €</h3>
+                    <h3 className={styles.truncate}>{props.name}</h3>
+                    <h3 className={styles.truncate}>{props.description}</h3>
+                    <h3 className={styles.truncate}>{props.price} €</h3>
                   </td>
                 </tr>
               </tbody>
