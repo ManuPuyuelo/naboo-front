@@ -84,7 +84,6 @@ function MyActivities() {
     }
   };
 
-  // ARTICLES - Use of data from the fetch in a variable articles which contains as much <ArticleCard/> as needed in the return
   const activitiesToShow = activities.map((data, i) => {
     return <Activity key={i} {...data} />;
   });
