@@ -180,42 +180,12 @@
   background-color: #0cbc8b;
   color: white;
 }
-
-/* @media screen and (max-width: 1665px) {
-  .sectionContainer {
-    margin-top: 2vw;
-    margin-left: 4vw;
-    margin-right: 4vw;
-    background-color: white;
-    border-radius: 1em;
+@media screen and (max-width: 800px) {
+  .createButton {
+    margin: 0 auto;
+  }
+  .modalSeparator {
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
 }
-@media screen and (max-width: 1489px) {
-  .sectionContainer {
-    margin-left: 8vw;
-    margin-right: 8vw;
-  }
-}
-
-@media screen and (max-width: 805px) {
-  .activitiesContainer {
-    margin-top: 4vw;
-  }
-
-  .sectionContainer {
-    margin-top: 4vw;
-    padding-top: 8vw;
-    padding-left: 4vw;
-    padding-right: 4vw;
-  }
-  .sectionContainer {
-    padding-bottom: 8vw;
-  }
-}
-
-@media screen and (max-width: 520px) {
-  .sectionContainer {
-    margin-left: 4vw;
-    margin-right: 4vw;
-  }
-} */

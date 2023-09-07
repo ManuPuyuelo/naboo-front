@@ -45,3 +45,16 @@
   overflow: hidden;
   line-height: 1.5;
 }
+@media screen and (max-width: 800px) {
+  .activityInfo {
+    padding: 0;
+    width: 40vw;
+  }
+
+  .image {
+    display: none;
+  }
+  .labelColumn {
+    display: none;
+  }
+}
